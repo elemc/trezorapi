@@ -1,6 +1,6 @@
 Name:           trezorapi
 Version:        1.0.9
-Release:        2%{?dist}
+Release:        3%{?dist}
 Summary:        Trezor-K2 application
 
 License:        Proprietary
@@ -51,6 +51,9 @@ exit 0
 %systemd_postun_with_restart trezorapi.service
 
 %changelog
+* Wed Mar 16 2022 Alexei Panov <alexei@panov.email> - 3
+- wrong install instructions
+
 * Wed Mar 16 2022 Alexei Panov <alexei@panov.email> - 2
 - changes in spec-file, requires changed to postgresql-server
 
