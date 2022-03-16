@@ -25,8 +25,8 @@ mkdir -p $RPM_BUILD_ROOT/opt/trezor
 mkdir -p $RPM_BUILD_ROOT/opt/trezor/frontend
 mkdir -p $RPM_BUILD_ROOT/opt/trezor/docs
 mkdir -p $RPM_BUILD_ROOT%{_unitdir}
-cp -r  %{_builddir}/%{name}-%{version}/frontend $RPM_BUILD_ROOT/opt/trezor/frontend
-cp -r  %{_builddir}/%{name}-%{version}/docs $RPM_BUILD_ROOT/opt/trezor/docs
+cp -r  %{_builddir}/%{name}-%{version}/frontend $RPM_BUILD_ROOT/opt/trezor/
+cp -r  %{_builddir}/%{name}-%{version}/docs $RPM_BUILD_ROOT/opt/trezor/
 # install -D -m 0644 %{_builddir}/%{name}-%{version}/trezorapi $RPM_BUILD_ROOT/opt/trezor/trezorapi
 ln -sf /opt/trezor/%{name}-%{version} $RPM_BUILD_ROOT/opt/trezor/%{name}
 install -D -m 0755 %{_builddir}/%{name}-%{version}/trezorapi-%{version} $RPM_BUILD_ROOT/opt/trezor/trezorapi-%{version}
