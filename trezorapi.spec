@@ -51,8 +51,9 @@ exit 0
 %systemd_postun_with_restart trezorapi.service
 
 %changelog
-* Tue Mar 15 2022 Alexei Panov <alexei@panov.email> - 1
-- Initial build
-- 
 * Wed Mar 16 2022 Alexei Panov <alexei@panov.email> - 2
 - changes in spec-file, requires changed to postgresql-server
+
+* Tue Mar 15 2022 Alexei Panov <alexei@panov.email> - 1
+- Initial build
+
