@@ -1,6 +1,6 @@
 Name:           trezorapi
 Version:        1.0.9
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        Trezor-K2 application
 
 License:        Proprietary
@@ -10,7 +10,7 @@ Source0:        https://panov.email/%{name}-%{version}.tar.xz
 BuildArch:      x86_64
 
 BuildRequires:  systemd-rpm-macros 
-Requires:       postgresql-server >= 12
+Requires:       postgresql-server
 
 %description
 This package contains Trezor-K2 application. 
@@ -54,3 +54,5 @@ exit 0
 * Tue Mar 15 2022 Alexei Panov <alexei@panov.email> - 1
 - Initial build
 - 
+* Wed Mar 16 2022 Alexei Panov <alexei@panov.email> - 2
+- changes in spec-file, requires changed to postgresql-server
