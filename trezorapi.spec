@@ -17,7 +17,7 @@ This package contains Trezor-K2 application.
 Application for setup and basic monitoring of Trezor secuity devices.
 
 %prep
-%setup -n %{name}-v%{version}
+%autosetup
 
 %install
 rm -rf $RPM_BUILD_ROOT
@@ -27,9 +27,8 @@ mkdir -p $RPM_BUILD_ROOT/opt/trezor/docs
 mkdir -p $RPM_BUILD_ROOT%{_unitdir}
 cp -r  %{_builddir}/%{name}-%{version}/frontend $RPM_BUILD_ROOT/opt/trezor/
 cp -r  %{_builddir}/%{name}-%{version}/docs $RPM_BUILD_ROOT/opt/trezor/
-# install -D -m 0644 %{_builddir}/%{name}-%{version}/trezorapi $RPM_BUILD_ROOT/opt/trezor/trezorapi
-ln -sf /opt/trezor/%{name}-%{version} $RPM_BUILD_ROOT/opt/trezor/%{name}
-install -D -m 0755 %{_builddir}/%{name}-%{version}/trezorapi-%{version} $RPM_BUILD_ROOT/opt/trezor/trezorapi-%{version}
+ln -sf /opt/trezor/%{name}-v%{version} $RPM_BUILD_ROOT/opt/trezor/%{name}
+install -D -m 0755 %{_builddir}/%{name}-%{version}/trezorapi-v%{version} $RPM_BUILD_ROOT/opt/trezor/trezorapi-%{version}
 install -D -m 0644 %{_builddir}/%{name}-%{version}/ActivatorPublicKey.key $RPM_BUILD_ROOT/opt/trezor/ActivatorPublicKey.key
 install -D -m 0644 %{_builddir}/%{name}-%{version}/trezorapi.toml $RPM_BUILD_ROOT/opt/trezor/trezorapi.toml
 install -D -m 0644 %{_builddir}/%{name}-%{version}/trezorapi.service $RPM_BUILD_ROOT%{_unitdir}/trezorapi.service
