@@ -17,7 +17,7 @@ This package contains Trezor-K2 application.
 Application for setup and basic monitoring of Trezor secuity devices.
 
 %prep
-%autosetup
+%setup -n %{name}-v%{version}
 
 %install
 rm -rf $RPM_BUILD_ROOT
