@@ -5,7 +5,7 @@ Summary:        Trezor-K2 application
 
 License:        Proprietary
 URL:            http://trezorrussia.ru/
-Source0:        https://panov.email/%{name}-v%{version}.tar.xz
+Source0:        https://panov.email/%{name}-%{version}.tar.xz
 
 BuildArch:      x86_64
 
@@ -28,7 +28,7 @@ mkdir -p $RPM_BUILD_ROOT%{_unitdir}
 cp -r  %{_builddir}/%{name}-%{version}/frontend $RPM_BUILD_ROOT/opt/trezor/
 cp -r  %{_builddir}/%{name}-%{version}/docs $RPM_BUILD_ROOT/opt/trezor/
 ln -sf /opt/trezor/%{name}-v%{version} $RPM_BUILD_ROOT/opt/trezor/%{name}
-install -D -m 0755 %{_builddir}/%{name}-%{version}/trezorapi-v%{version} $RPM_BUILD_ROOT/opt/trezor/trezorapi-%{version}
+install -D -m 0755 %{_builddir}/%{name}-%{version}/trezorapi-v%{version} $RPM_BUILD_ROOT/opt/trezor/trezorapi-v%{version}
 install -D -m 0644 %{_builddir}/%{name}-%{version}/ActivatorPublicKey.key $RPM_BUILD_ROOT/opt/trezor/ActivatorPublicKey.key
 install -D -m 0644 %{_builddir}/%{name}-%{version}/trezorapi.toml $RPM_BUILD_ROOT/opt/trezor/trezorapi.toml
 install -D -m 0644 %{_builddir}/%{name}-%{version}/trezorapi.service $RPM_BUILD_ROOT%{_unitdir}/trezorapi.service
@@ -36,7 +36,7 @@ install -D -m 0644 %{_builddir}/%{name}-%{version}/trezorapi.service $RPM_BUILD_
 %files
 /opt/trezor/frontend/*
 /opt/trezor/docs/*
-/opt/trezor/%{name}-%{version}
+/opt/trezor/%{name}-v%{version}
 /opt/trezor/%{name}
 /opt/trezor/%{name}.toml
 /opt/trezor//ActivatorPublicKey.key
