@@ -1,11 +1,11 @@
 Name:           trezorapi
-Version:        1.0.9
-Release:        3%{?dist}
+Version:        1.1.0
+Release:        1%{?dist}
 Summary:        Trezor-K2 application
 
 License:        Proprietary
 URL:            http://trezorrussia.ru/
-Source0:        https://panov.email/%{name}-%{version}.tar.xz
+Source0:        https://panov.email/%{name}-v%{version}.tar.xz
 
 BuildArch:      x86_64
 
@@ -51,12 +51,15 @@ exit 0
 %systemd_postun_with_restart trezorapi.service
 
 %changelog
-* Wed Mar 16 2022 Alexei Panov <alexei@panov.email> - 3
+* Fri Apr  8 2022 Alexei Panov <alexei@panov.email> - 1.1.0-1
+- new release
+
+* Wed Mar 16 2022 Alexei Panov <alexei@panov.email> - 1.0.9-3
 - wrong install instructions
 
-* Wed Mar 16 2022 Alexei Panov <alexei@panov.email> - 2
+* Wed Mar 16 2022 Alexei Panov <alexei@panov.email> - 1.0.9-2
 - changes in spec-file, requires changed to postgresql-server
 
-* Tue Mar 15 2022 Alexei Panov <alexei@panov.email> - 1
+* Tue Mar 15 2022 Alexei Panov <alexei@panov.email> - 1.0.9-1
 - Initial build
 
