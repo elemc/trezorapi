@@ -5,7 +5,7 @@ Summary:        Trezor-K2 application
 
 License:        Proprietary
 URL:            http://trezorrussia.ru/
-Source0:        https://panov.email/%{name}-v%{version}.tar.xz
+Source0:        https://panov.email/%{name}-%{version}.tar.xz
 
 BuildArch:      x86_64
 
