@@ -28,7 +28,7 @@ mkdir -p $RPM_BUILD_ROOT%{_unitdir}
 cp -r  %{_builddir}/%{name}-%{version}/frontend $RPM_BUILD_ROOT/opt/trezor/
 cp -r  %{_builddir}/%{name}-%{version}/docs $RPM_BUILD_ROOT/opt/trezor/
 ln -sf /opt/trezor/%{name}-%{version} $RPM_BUILD_ROOT/opt/trezor/%{name}
-install -D -m 0755 %{_builddir}/%{name}-%{version}/trezorapi-v%{version} $RPM_BUILD_ROOT/opt/trezor/trezorapi-v%{version}
+install -D -m 0755 %{_builddir}/%{name}-%{version}/trezorapi-%{version} $RPM_BUILD_ROOT/opt/trezor/trezorapi-v%{version}
 install -D -m 0644 %{_builddir}/%{name}-%{version}/ActivatorPublicKey.key $RPM_BUILD_ROOT/opt/trezor/ActivatorPublicKey.key
 install -D -m 0644 %{_builddir}/%{name}-%{version}/trezorapi.toml $RPM_BUILD_ROOT/opt/trezor/trezorapi.toml
 install -D -m 0644 %{_builddir}/%{name}-%{version}/trezorapi.service $RPM_BUILD_ROOT%{_unitdir}/trezorapi.service
