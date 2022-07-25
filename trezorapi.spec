@@ -1,6 +1,6 @@
 Name:           trezorapi
-Version:        1.1.2
-Release:        2%{?dist}
+Version:        1.1.3
+Release:        1%{?dist}
 Summary:        Trezor-K2 application
 
 License:        Proprietary
@@ -50,6 +50,9 @@ exit 0
 %systemd_postun_with_restart trezorapi.service
 
 %changelog
+* Mon Jul 25 2022 Alexei Panov <alexei@panov.email> - 1.1.3-1
+- new release
+
 * Thu Jul  7 2022 Alexei Panov <alexei@panov.email> - 1.1.2-2
 - fixed name collisions
 
