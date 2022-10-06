@@ -1,6 +1,6 @@
 Name:           trezorapi
 Version:        1.1.6
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        Trezor-K2 application
 
 License:        Proprietary
@@ -29,6 +29,7 @@ cp -r  %{_builddir}/%{name}-%{version}/frontend $RPM_BUILD_ROOT/opt/trezor/
 cp -r  %{_builddir}/%{name}-%{version}/docs $RPM_BUILD_ROOT/opt/trezor/
 ln -sf /opt/trezor/%{name}-%{version} $RPM_BUILD_ROOT/opt/trezor/%{name}
 install -D -m 0755 %{_builddir}/%{name}-%{version}/trezorapi-%{version} $RPM_BUILD_ROOT/opt/trezor/trezorapi-%{version}
+install -D -m 0755 %{_builddir}/%{name}-%{version}/trezor-start.sh $RPM_BUILD_ROOT/opt/trezor/trezor-start.sh
 install -D -m 0644 %{_builddir}/%{name}-%{version}/ActivatorPublicKey.key $RPM_BUILD_ROOT/opt/trezor/ActivatorPublicKey.key
 install -D -m 0644 %{_builddir}/%{name}-%{version}/trezorapi.toml $RPM_BUILD_ROOT/opt/trezor/trezorapi.toml
 install -D -m 0644 %{_builddir}/%{name}-%{version}/trezorapi.service $RPM_BUILD_ROOT%{_unitdir}/trezorapi.service
@@ -50,6 +51,9 @@ exit 0
 %systemd_postun_with_restart trezorapi.service
 
 %changelog
+* Thu Oct  6 2022 Alexei Panov <alexei@panov.email> - 1.1.6-2
+- added shell-script for start service
+
 * Fri Jul 29 2022 Alexei Panov <alexei@panov.email> - 1.1.6-1
 - new release
 
