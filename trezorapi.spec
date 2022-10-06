@@ -41,6 +41,7 @@ install -D -m 0644 %{_builddir}/%{name}-%{version}/trezorapi.service $RPM_BUILD_
 /opt/trezor/%{name}
 /opt/trezor/%{name}.toml
 /opt/trezor//ActivatorPublicKey.key
+/opt/trezor/trezor-start.sh
 %{_unitdir}/trezorapi.service
 
 %preun
