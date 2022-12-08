@@ -52,10 +52,10 @@ exit 0
 %systemd_postun_with_restart trezorapi.service
 
 %changelog
-* Thu Dec 8 MSK 2022 Alexei Panov <alexei@panov.email> - 1.1.9-1
+* Thu Dec  8 2022 Alexei Panov <alexei@panov.email> - 1.1.9-1
 - new releasse
 
-* Mon Dec 5 MSK 2022 Alexei Panov <alexei@panov.email> - 1.1.8-1
+* Mon Dec  5 2022 Alexei Panov <alexei@panov.email> - 1.1.8-1
 - new releasse
 
 * Mon Oct 31 2022 Alexei Panov <alexei@panov.email> - 1.1.7-1
