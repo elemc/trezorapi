@@ -53,10 +53,10 @@ exit 0
 
 %changelog
 * Thu Dec  8 2022 Alexei Panov <alexei@panov.email> - 1.1.9-1
-- new releasse
+- new release
 
 * Mon Dec  5 2022 Alexei Panov <alexei@panov.email> - 1.1.8-1
-- new releasse
+- new release
 
 * Mon Oct 31 2022 Alexei Panov <alexei@panov.email> - 1.1.7-1
 - new release
