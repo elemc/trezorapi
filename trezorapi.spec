@@ -52,6 +52,9 @@ exit 0
 %systemd_postun_with_restart trezorapi.service
 
 %changelog
+* Thu Dec 28 2023 Alexei Panov <alexei@panov.email> - 1.2.15-1
+- new release
+
 * Thu Dec 28 2023 Alexei Panov <alexei@panov.email> - 1.2.14-1
 - new release
 
