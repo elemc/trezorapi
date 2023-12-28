@@ -1,5 +1,5 @@
 Name:           trezorapi
-Version:        1.2.14
+Version:        1.2.15
 Release:        1%{?dist}
 Summary:        Trezor-K2 application
 
