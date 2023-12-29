@@ -1,5 +1,5 @@
 Name:           trezorapi
-Version:        1.2.16
+Version:        1.2.17
 Release:        1%{?dist}
 Summary:        Trezor-K2 application
 
@@ -52,6 +52,9 @@ exit 0
 %systemd_postun_with_restart trezorapi.service
 
 %changelog
+* Fri Dec 29 2023 Alexei Panov <alexei@panov.email> - 1.2.17-1
+- new release
+
 * Thu Dec 28 2023 Alexei Panov <alexei@panov.email> - 1.2.16-1
 - new release
 
