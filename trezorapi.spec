@@ -53,7 +53,7 @@ exit 0
 
 %changelog
 * Fri Mar 15 2024 Alexei Panov <alexei@panov.email> - 1.2.24-1
-- new relase
+- new release
 
 * Fri Mar  1 2024 Alexei Panov <alexei@panov.email> - 1.2.19-1
 - new release
