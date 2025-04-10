@@ -50,7 +50,7 @@ exit 0
 %systemd_postun_with_restart trezorapi.service
 
 %changelog
-* Thu Apr 10 2024 Alexei Panov <alexei@panov.email> - 1.2.29-1
+* Thu Apr 10 2025 Alexei Panov <alexei@panov.email> - 1.2.29-1
 - new release
 
 * Thu Oct 31 2024 Alexei Panov <alexei@panov.email> - 1.2.27-1
